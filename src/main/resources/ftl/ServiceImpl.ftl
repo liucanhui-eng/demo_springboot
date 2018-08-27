@@ -1,5 +1,5 @@
 
-package ${package}
+package ${serviceImplPackage}
 @Service
 public class ${Entity}ServiceImpl implements ${Entity}Service {
 

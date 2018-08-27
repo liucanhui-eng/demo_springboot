@@ -1,10 +1,7 @@
 package com.freemaker;
 
-import com.controller.StuController;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
-
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.FileWriter;
@@ -17,7 +14,7 @@ public class GetModel {
         //创建config
         Configuration conf=new Configuration(Configuration.VERSION_2_3_28);
         //设置模板加载路径
-        conf.setClassForTemplateLoading(StuController.class,modelPath);
+        conf.setClassForTemplateLoading(GetModel.class,modelPath);
         try {
             //获取模板
             Template template = conf.getTemplate(modelName, "utf-8");
@@ -39,7 +36,7 @@ public class GetModel {
         //创建config
         Configuration conf=new Configuration(Configuration.VERSION_2_3_28);
         //设置模板加载路径
-        conf.setClassForTemplateLoading(StuController.class,modelPath);
+        conf.setClassForTemplateLoading(GetModel.class,modelPath);
         try {
             //获取模板
             Template template = conf.getTemplate(modelName, "utf-8");

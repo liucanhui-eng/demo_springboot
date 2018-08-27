@@ -1,4 +1,4 @@
-package com.serviceimpl;
+package com.serviceImpl;
 
 import com.model.dao.StudentMapper;
 import org.junit.Test;
